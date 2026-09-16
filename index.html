@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Mouse and Form Event Handling</title>
+
+<style>
+body{
+    text-align:center;
+    font-family:Arial;
+    background:#f2f2f2;
+}
+
+#myElement{
+    background:yellow;
+    border:3px solid black;
+    padding:20px;
+    width:60%;
+    margin:auto;
+    font-size:24px;
+}
+
+form{
+    margin-top:30px;
+}
+
+input{
+    padding:8px;
+    width:220px;
+}
+
+button{
+    padding:8px 18px;
+    background:#007BFF;
+    color:white;
+    border:none;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#0056b3;
+}
+</style>
+
+</head>
+
+<body>
+
+<h2>Mouse and Form Event Example</h2>
+
+<div id="myElement"
+     onmouseover="handleMouseOver()"
+     onmouseout="handleMouseOut()">
+Move the mouse here to change color.
+</div>
+
+<form onsubmit="handleSubmit(event)">
+    <br><br>
+    Enter a value:
+    <input type="text" id="myInput" required>
+    <button type="submit">Submit</button>
+</form>
+
+<script src="style.js"></script>
+
+</body>
+</html>

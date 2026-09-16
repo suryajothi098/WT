@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hide Paragraph using jQuery</title>
+
+    <!-- jQuery Library -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            background:#f4f4f4;
+            text-align:center;
+            margin-top:60px;
+        }
+
+        .container{
+            width:60%;
+            margin:auto;
+            background:white;
+            padding:25px;
+            border-radius:10px;
+            box-shadow:0 0 10px lightgray;
+        }
+
+        h2{
+            color:darkblue;
+        }
+
+        p{
+            font-size:18px;
+            color:#333;
+            border:2px solid #007BFF;
+            padding:15px;
+            border-radius:8px;
+            background:#eef6ff;
+        }
+
+        button{
+            margin:10px;
+            padding:10px 20px;
+            font-size:16px;
+            border:none;
+            border-radius:5px;
+            cursor:pointer;
+            color:white;
+        }
+
+        #hide{
+            background:#e74c3c;
+        }
+
+        #show{
+            background:#28a745;
+        }
+
+        button:hover{
+            opacity:0.9;
+        }
+    </style>
+
+    <script>
+        $(document).ready(function(){
+
+            $("#hide").click(function(){
+                $("p").hide();
+            });
+
+            $("#show").click(function(){
+                $("p").show();
+            });
+
+        });
+    </script>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>Hide Paragraph using jQuery</h2>
+
+<p>
+This is a sample paragraph. Click the Hide button to hide this paragraph and
+click the Show button to display it again.
+</p>
+
+<button id="hide">Hide Paragraph</button>
+
+<button id="show">Show Paragraph</button>
+
+</div>
+
+</body>
+</html>
